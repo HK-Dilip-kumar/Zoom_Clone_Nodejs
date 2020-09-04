@@ -1,0 +1,24 @@
+# Plan of Action
+- Initialize our Nodejs Projects
+        ------->> npm init
+        ------->> npm express --save
+        ------->> npm install ejs
+- Initialize our first view 
+        ------->> room.ejs(ejs is such a file which has embedded javascript in HTML context)
+        ------->> app.set('engine','ejs');
+- Create a rooom Id
+        ------->> How To create Unique Id?
+        ------->> need to include a library called `uuid` to generate the unique ID's
+        ------->>uuid will genrate random ID's for specific room we need to provide the ID to allow firends to join.
+        ------->> now include uuid in project `const {v4:uuidv4}=require('uuid);
+
+        ------->> Now my current URL is localhost:3030 but i want to show the room id with it # check out line no.11
+- Add the abibility to view our own video(`watch the video from 49:22`)
+        ------->>Made the public folder and script.js file to use our own video to showcase to it       
+- add the ability to allow others to stream their video(`1:05:32`)
+        ------->> Now we are into the tougher section part mostly inside the Zoom part
+        ------->>npm install socket.io
+- add styling
+- add the ability to create messages
+- add mute button
+- add video stop button
